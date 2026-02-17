@@ -258,7 +258,7 @@ body{
 
 .lista-mo{
     padding: 30px;
-    width: 400px;
+    width: 100%;
 }
 .lista-mo ul{
     list-style: none;
@@ -275,6 +275,8 @@ body{
  border-bottom: 1px solid var(--very-light-pink);
  padding-bottom: 20px;
  margin-bottom: 20px; 
+
+
 }
 
 .lista-mo li{
@@ -284,6 +286,7 @@ body{
     margin: 6px 0;
     margin-top: 20px;
     font-weight: bold;
+    display: block;
 }
 
 .lista-mo li.email{
