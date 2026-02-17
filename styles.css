@@ -7,6 +7,7 @@
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    --card-size:100px;
 }
 body{
     margin: 0;
@@ -164,4 +165,128 @@ body{
 .form-container h1{
     text-align: center;
     font-size: var(--lg);
+}
+
+
+
+/* PARTE DOSSSSSSSSSSSSSSSSS*/
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-size));
+    gap: 26px;
+    place-content: center;
+}
+.product-card{
+    width: var(--card-size);
+}
+.product-card img{
+    width: var(--card-size);
+    height: var(--card-size);
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-info figure{
+    margin: 0;
+}
+.product-info figure img{
+    width: 35px;
+    height: 35px;
+}
+.product-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product-info div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+@media(max-width: 640px){
+    :root{
+        --card-size:140px;
+    }
+}
+.lista{
+    text-align: center;
+    display: flex;
+    border: 2px solid var(--very-light-pink);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    width: 90px;
+    justify-content: center;
+   
+}
+.lista ul{
+    padding: 0;
+    margin: 0;
+}
+.lista li{
+    list-style-type: none;
+    text-align: center;
+    color:var(--black);
+    cursor: pointer;
+    margin: 6px 0;
+    margin-top: 20px;
+}
+.algo{
+    padding-top: 20px;
+}
+.lista li:last-child {
+    border-top: 1px solid var(--very-light-pink);
+    margin-top: 10px;
+    padding-top: 30px;  
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom:0px ;
+
+}
+.lista li:not(:last-child) {
+    font-weight: bold;
+}
+/*CATE*/
+
+.lista-mo{
+    padding: 30px;
+    width: 400px;
+}
+.lista-mo ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista-mo li{
+    color:var(--black);
+    margin: 12px 0;
+   
+}
+/*lineaaaa*/
+.lista-mo li:nth-child(6) {
+ border-bottom: 1px solid var(--very-light-pink);
+ padding-bottom: 20px;
+ margin-bottom: 20px; 
+}
+
+.lista-mo li{
+    list-style-type: none;
+    color:var(--black);
+    cursor: pointer;
+    margin: 6px 0;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.lista-mo li.email{
+    color: gray;
+    font-size: 14px;
 }
