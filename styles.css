@@ -179,6 +179,7 @@ body{
 }
 .product-card{
     width: var(--card-size);
+    
 }
 .product-card img{
     width: var(--card-size);
@@ -188,16 +189,22 @@ body{
 }
 .product-info{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
+    align-items:flex-start;
     margin-top: 12px;
 }
 .product-info figure{
     margin: 0;
+    justify-content: center;
+    display: flex;
+    margin-left: 8px;
 }
 .product-info figure img{
     width: 35px;
     height: 35px;
+    justify-content: center;
+    cursor: pointer;
+    
 }
 .product-info div p:nth-child(1){
     font-weight: bold;
@@ -285,11 +292,13 @@ body{
     cursor: pointer;
     margin: 6px 0;
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: 700;
     display: block;
+    font-family: 'Quicksand' , sans-serif;
 }
 
 .lista-mo li.email{
     color: gray;
     font-size: 14px;
+    font-weight: 350;
 }
